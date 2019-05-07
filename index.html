@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Black+And+White+Picture"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <title>Oups Puppet Theater</title>
+  </head>
+
+  <body class="bg-primary" id="home" data-target="#main-nav">
+    <!-- NAVIGATION -->
+    <div class="container">
+      <nav id="main-nav" class="navbar navbar-expand-xl navbar-light py-4">
+        <div class="container">
+          <a href="index.html" class="navbar-brand brand-text text-secondary">
+            <p class="d-inline align-middle">Oups!</p>
+          </a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Αρχική</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">Εμάς</a>
+              </li>
+              <li class="nav-item">
+                <a href="#authors" class="nav-link">Παραστάσεις</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Εργαστήρια</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Σεμινάρια</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Περιοδεία</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Φωτό</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Επικοινωνία</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- HEADER SECTION -->
+    <section id="header" class="py-5 bg-primary">
+      <div class="container">
+        <div class="row d-none d-md-flex justify-content-between">
+          <img
+            id="fairy"
+            class="fairy-slide"
+            src="resources/img/header/fairy.png"
+            alt="fairy"
+          />
+          <audio id="fairySound">
+            <source src="resources/audio/fairy.mp3"></source>
+          </audio>
+          <img
+            id="king"
+            class="king-slide"
+            src="resources/img/header/king.png"
+            alt="king"
+          />
+          <audio id="kingSound">
+            <source src="resources/audio/king.mp3"></source>
+          </audio>
+          <img
+            id="princess"
+            class="princess-slide"
+            src="resources/img/header/princess.png"
+            alt="princess"
+          />
+          <audio id="princessSound">
+            <source src="resources/audio/princess.mp3"></source>
+          </audio>          
+          <img
+            id="witch"
+            class="witch-slide"
+            src="resources/img/header/witch.png"
+            alt="witch"
+          />
+          <audio id="witchSound">
+            <source src="resources/audio/witch.mp3"></source>
+          </audio>           
+        </div>
+        <div class="row d-none d-md-flex justify-content-between">
+          <img
+            id="apple"
+            class="apple-slide"
+            src="resources/img/header/apple.png"
+            alt="apple"
+          />
+          <audio id="appleSound">
+            <source src="resources/audio/apple.mp3"></source>
+          </audio>            
+          <img
+            id="gnome"
+            class="gnome-slide"
+            src="resources/img/header/gnome.png"
+            alt="gnome"
+          />
+          <audio id="gnomeSound">
+            <source src="resources/audio/gnome.mp3"></source>
+          </audio>            
+          <img
+            id="rabbit"
+            class="rabbit-slide"
+            src="resources/img/header/rabbit.png"
+            alt="rabbit"
+          />
+          <audio id="rabbitSound">
+            <source src="resources/audio/rabbit.mp3"></source>
+          </audio>            
+          <img
+            id="castle"
+            class="castle-slide"
+            src="resources/img/header/castle.png"
+            alt="castle"
+          />
+          <audio id="castleSound">
+            <source src="resources/audio/castle.mp3"></source>
+          </audio>          
+        </div>
+        <div class="row d-flex justify-content-center">
+          <h1 id="header-text" class="text-center text-secondary">
+            Oups! The Puppet Theater   
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+
+    <section id="gallery" class="py-5 bg-secondary text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="info-header mb-5 js--whatHeader">
+              <h1 class="text-primary pb-3">
+                Τι Κάνουμε;
+              </h1>
+              <p class="h3 text-primary">
+                Παραστάσεις, εργαστήρια, σεμινάρια και περιοδείες!
+              </p>
+              <p class="h3 text-primary d-none d-sm-block">
+                Δείτε τις παρακάτω φωτογραφίες για ένα δείγμα των έργων μας ή
+                πατήστε τα παραπάνω συνδέσμους για περισσότερες πληροφορίες.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md js--galleryPhotos">
+            <div class="row mb-4">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=251"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=251"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=252"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=252"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=253"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=253"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=261"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=261"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="row mb-4">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=254"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=254"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=255"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=255"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=256"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=256"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=265"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=265"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="row">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=257"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=257"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=258"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=258"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=259"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=259"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=264"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                class="col-sm-3 mb-2"
+              >
+                <img
+                  src="https://unsplash.it/600.jpg?image=264"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO SECTION -->
+    <section id="who" class="my-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="info-header mb-5 js--whoHeader">
+              <h1 class="text-secondary pb-3">
+                Ποιοι Είμαστε;
+              </h1>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat, enim culpa vel exercitationem architecto iure!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card js--aggeliki">
+              <div class="card-body">
+                <img
+                  src="resources/img/aggeliki.png"
+                  alt="αγγελική"
+                  class="img-fluid rounded-circle w-50 mb-3"
+                />
+                <h3>Αγγελική</h3>
+                <h4 class="text-muted">Γεια Σας!</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt ratione pariatur harum. Necessitatibus, quaerat
+                  dolorem.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card js--aleksandros">
+              <div class="card-body">
+                <img
+                  src="resources/img/aleksandros.png"
+                  alt="αλέξανδρος"
+                  class="img-fluid rounded-circle w-50 mb-3"
+                />
+                <h3>Αλέξανδρος</h3>
+                <h4 class="text-muted">Τι χαμπάρια;</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt ratione pariatur harum. Necessitatibus, quaerat
+                  dolorem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section id="newsletter" class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row js--subscribeHeader">
+          <div class="col">
+            <div class="info-header mb-5">
+              <h1 class="text-primary text-center">
+                Εγγραφείτε στο newsletter μας
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row js--subscribeForm">
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control form-control-lg mb-resp bg-light"
+              placeholder="Όνομα"
+            />
+          </div>
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control form-control-lg mb-resp bg-light"
+              placeholder="Email"
+            />
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-primary btn-lg btn-block">
+              <i class="fas fa-envelope-open-o"></i> Εγγραφή
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <h1 class="js--contactHeader">Γράψτε μας</h1>
+            <p class="lead js--contactHeader">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, tempore!
+            </p>
+            <form class="js--contactForm">
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Όνομα" />
+              </div>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-pencil-alt align-self-start pt-2"></i>
+                  </span>
+                </div>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Μήνυμα"
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <input
+                type="submit"
+                value="Αποστολή"
+                class="btn btn-dark btn-block btn-lg"
+              />
+            </form>
+          </div>
+
+          <div
+            class="d-none d-md-block col-lg-3 align-self-center js--bottomLogo"
+          >
+            <img src="resources/img/logo-transparent.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="main-footer" class="py-5 bg-secondary text-primary">
+      <div class="container py-2">
+        <div class="row text-center">
+          <div class="col">
+            <p>Copyright &copy; <span id="year"></span> Oups! The Puppet Theater</p>
+            <div class="d-flex justify-content-center">
+              <div class="px-4">
+                <a
+                  href="https://www.facebook.com/OUPS-the-puppet-theater-107602269582337/"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+              <div class="px-4">
+                <a
+                  href="https://www.youtube.com/channel/UCjEbuJG6-YDl3lMvXcQ3-JA"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+              <div class="px-4">
+                <a href="https://instagram.com">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+    <script src="resources/js/circletype.min.js"></script>
+    <script src="resources/js/jquery.fittext.js"></script>
+    <script src="resources/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/animateChars.js"></script>
+    <script src="resources/js/animateSections.js"></script>
+    <script src="resources/js/main.js"></script>
+  </body>
+</html>
