@@ -1,9 +1,10 @@
 $(document).ready(function() {
+
   // reverse circle the header text
   new CircleType(document.getElementById("header-text"));
 
-  // make sure header text fits all screens
-  $("header-text").fitText();
+  // execute common tasks
+  SharedJS.init();
 
   // initialize character animations once they have finished 'falling'
   setTimeout(AnimateChars.init, 3500);
@@ -16,9 +17,6 @@ $(document).ready(function() {
 
   // initialize our animated sections
   AnimateSections.init();
-
-  // get the current year for the copyright
-  $("#year").text(new Date().getFullYear());
 
   // // initialize scrollspy
   // $("body").scrollspy({ target: "#main-nav" });

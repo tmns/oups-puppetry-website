@@ -38,6 +38,8 @@ var AnimateChars = (function () {
     
     for (let character of Object.keys(charactersAndAnimations)) {
       $(`#${character}`).removeClass(`${character}-slide`);
+      $(`#${character}`).addClass('float');
+      
       setOnHover(character, charactersAndAnimations[character]);
     }
   }

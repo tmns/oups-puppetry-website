@@ -1,0 +1,116 @@
+#header h1 {
+  -webkit-animation: rotation 8s infinite linear;
+  animation: rotation 8s infinite linear; }
+  @media (min-width: 768px) {
+    #header h1 {
+      -webkit-animation-delay: 3.2s;
+      animation-delay: 3.2s; } }
+
+#header .fairy-slide {
+  -webkit-animation: slideInDown 3s;
+  animation: slideInDown 3s; }
+
+#header .king-slide {
+  -webkit-animation: slideInDown 3.5s;
+  animation: slideInDown 3.5s; }
+
+#header .princess-slide {
+  -webkit-animation: slideInDown 2s;
+  animation: slideInDown 2s; }
+
+#header .witch-slide {
+  -webkit-animation: slideInDown 1.8s;
+  animation: slideInDown 1.8s; }
+
+#header .apple-slide {
+  -webkit-animation: slideInDown 2.2s;
+  animation: slideInDown 2.2s; }
+
+#header .gnome-slide {
+  -webkit-animation: slideInDown 2.6s;
+  animation: slideInDown 2.6s; }
+
+#header .rabbit-slide {
+  -webkit-animation: slideInDown 1s;
+  animation: slideInDown 1s; }
+
+#header .castle-slide {
+  -webkit-animation: slideInDown 2s;
+  animation: slideInDown 2s; }
+
+#header .wobble {
+  -webkit-animation: wobble 2s;
+  animation: wobble 2s; }
+
+#header .tada {
+  -webkit-animation: tada 1s;
+  animation: tada 1s; }
+
+#header .bounce {
+  -webkit-animation: bounce 1.5s;
+  animation: bounce 1.5s;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom; }
+
+#header .swing {
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation: swing 1s;
+  animation: swing 1s; }
+
+#header .jello {
+  -webkit-animation: jello 1s;
+  animation: jello 1s;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center; }
+
+#header .heartBeat {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; }
+
+#header .rubberBand {
+  -webkit-animation: rubberBand 1s;
+  animation: rubberBand 1s; }
+
+#header .shake {
+  -webkit-animation: shake 1.5s;
+  animation: shake 1.5s; }
+
+#who img {
+  margin-top: -50px; }
+
+#who p {
+  font-size: 1.4rem; }
+
+.js--aggeliki,
+.js--aleksandros,
+.js--whatHeader,
+.js--whoHeader,
+.js--galleryPhotos,
+.js--subscribeHeader,
+.js--subscribeForm,
+.js--contactHeader,
+.js--contactForm,
+.js--bottomLogo {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.js--aggeliki.animated,
+.js--aleksandros.animated,
+.js--whatHeader.animated,
+.js--whoHeader.animated,
+.js--galleryPhotos.animated,
+.js--subscribeHeader.animated,
+.js--subscribeForm.animated,
+.js--contactHeader.animated,
+.js--contactForm.animated,
+.js--bottomLogo.animated {
+  opacity: 1; }
