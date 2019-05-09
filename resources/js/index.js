@@ -16,7 +16,7 @@ $(document).ready(function() {
   });
 
   // initialize our animated sections
-  AnimateSections.init();
+  AnimateIndexSections.init();
 
   // // initialize scrollspy
   // $("body").scrollspy({ target: "#main-nav" });

@@ -1,4 +1,4 @@
-var AnimateSections = (function () {
+var AnimateIndexSections = (function () {
   
   var sectionsAndAnimations = {
     aggeliki: 'animated slideInLeft',

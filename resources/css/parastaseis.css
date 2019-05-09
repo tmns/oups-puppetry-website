@@ -17,25 +17,3 @@
   @media (min-width: 994px) {
     #header h1 {
       font-size: 1.7rem; } }
-
-.js--introTxt,
-.js--introImg,
-.js--secondTxt,
-.js--secondImg,
-.js--thirdTxt,
-.js--thirdImg,
-.js--outroTxt,
-.js--outroImg {
-  opacity: 0;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s; }
-
-.js--introTxt.animated,
-.js--introImg.animated,
-.js--secondTxt.animated,
-.js--secondImg.animated,
-.js--thirdTxt.animated,
-.js--thirdImg.animated,
-.js--outroTxt.animated,
-.js--outroImg.animated {
-  opacity: 1; }

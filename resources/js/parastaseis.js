@@ -8,7 +8,4 @@ $(document).ready(function() {
   .dir(-1)
   .radius(384);
 
-  // initialize our section animations
-  AnimateAboutSections.init();
-
 });
