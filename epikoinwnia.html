@@ -24,7 +24,7 @@
     />
     <link rel="stylesheet" href="resources/css/keyframes.css" />
     <link rel="stylesheet" href="resources/css/shared.css" />
-    <link rel="stylesheet" href="resources/css/seminaria.css" />
+    <link rel="stylesheet" href="resources/css/epikoinwnia.css" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="resources/img/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="resources/img/icons/apple-icon-60x60.png">
@@ -77,7 +77,7 @@
                 <a href="ergasthria.html" class="nav-link">Εργαστήρια</a>
               </li>
               <li class="nav-item">
-                <a href="seminaria.html" class="nav-link active">Σεμινάρια</a>
+                <a href="seminaria.html" class="nav-link">Σεμινάρια</a>
               </li>
               <li class="nav-item">
                 <a href="periodeia.html" class="nav-link">Περιοδεία</a>
@@ -86,7 +86,7 @@
                 <a href="fwto.html" class="nav-link">Φωτό</a>
               </li>
               <li class="nav-item">
-                <a href="epikoinwnia.html" class="nav-link">Επικοινωνία</a>
+                <a href="epikoinwnia.html" class="nav-link active">Επικοινωνία</a>
               </li>
             </ul>
           </div>
@@ -107,23 +107,73 @@
         </div>
     </section>
 
-    <!-- SEMINARIA SECTION -->
-    <section id="seminaria" class="py-5 bg-light text-center">
+    <!-- EPIKOINWNIA SECTION -->
+    <section id="epikoinwnia" class="py-5 bg-light">
       <div class="container">
         <div class="row">
           <div class="col">
-            <div class="info-header mb-5">
+            <div class="info-header mb-5 text-center">
               <h1 class="text-secondary pb-3">
-                Ελάτε στα σεμινάρια μας...
+                Επικοινωνήστε μαζί μας...
               </h1>
               <hr>
-              <div class="row">
-                <p></p>
-              </div>
-              <div class="row">
-                <p></p>
-              </div>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9">
+            <p class="text-secondary h3 js--contactHeader">
+              Μπορείτε να μας τηλεφωνήσετε μέσω τον παρακάτω αριθμό:
+            </p>
+            <p class="text-secondary h4 my-4">
+              <i class="fas fa-phone"></i> +30 693 233 7032 
+            <p/>
+            <p class="text-secondary mb-4 h3 js--contactHeader">
+              Αλλιώς, σας παρακαλούμε να μας στείλετε μήνυμα:
+            </p>            
+            <form class="js--contactForm">
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Όνομα" />
+              </div>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-pencil-alt align-self-start pt-2"></i>
+                  </span>
+                </div>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Μήνυμα"
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <input
+                type="submit"
+                value="Αποστολή"
+                class="btn btn-dark btn-block btn-lg"
+              />
+            </form>
+          </div>
+
+          <div
+            class="d-none d-md-block col-lg-3 align-self-center js--bottomLogo"
+          >
+            <img src="resources/img/logo-transparent.png" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
@@ -181,6 +231,6 @@
     <script src="resources/js/jquery.fittext.js"></script>
     <script src="resources/js/jquery.waypoints.min.js"></script>
     <script src="resources/js/shared.js"></script>
-    <script src="resources/js/seminaria.js"></script>
+    <script src="resources/js/epikoinwnia.js"></script>
   </body>
 </html>
