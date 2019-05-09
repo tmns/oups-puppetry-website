@@ -136,7 +136,10 @@
         </div>
         <div class="row">
           <div class="col-lg-9">
-            <form class="js--contactForm" name="contact-page-contact" method="POST" data-netlify="true">
+            <form class="js--contactForm" name="contact-page-contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+              <!-- netlify hidden input field for spam bots -->
+              <input type="hidden" name="bot-field" />
+              <!-- netlify hidden input field for spam bots -->              
               <div class="input-group input-group-lg mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text">

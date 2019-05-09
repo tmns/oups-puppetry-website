@@ -415,7 +415,10 @@
             </div>
           </div>
         </div>
-        <form name="subscribe-newsletter" method="POST" data-netlify="true">
+        <form name="subscribe-newsletter" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+          <!-- netlify hidden input field for spam bots -->
+          <input type="hidden" name="bot-field" />
+          <!-- netlify hidden input field for spam bots -->          
           <div class="row js--subscribeForm">
             <div class="col-md-4">
               <input
@@ -453,7 +456,10 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Blanditiis, tempore!
             </p>
-            <form class="js--contactForm" name="home-page-contact" method="POST" data-netlify="true">
+            <form class="js--contactForm" name="home-page-contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+              <!-- netlify hidden input field for spam bots -->
+              <input type="hidden" name="bot-field" />
+              <!-- netlify hidden input field for spam bots -->
               <div class="input-group input-group-lg mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text">
