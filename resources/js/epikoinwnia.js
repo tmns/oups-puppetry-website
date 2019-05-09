@@ -7,5 +7,4 @@ $(document).ready(function() {
   new CircleType(document.getElementById('header-text'))
   .dir(-1)
   .radius(384);
-
 });
