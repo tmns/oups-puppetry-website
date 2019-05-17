@@ -95,11 +95,23 @@
     </div>
 
     <!-- HEADER SECTION -->
-    <section id="header" class="py-5 bg-primary">
-			<!-- THIS IS A WORKAROUND TO GET AUTOPLAY TO FUNCTION CORRECTLY IN CHROME -->
+    <section id="header" class="pb-5 bg-primary">
+      
+      <!-- THIS IS A WORKAROUND TO GET AUTOPLAY TO FUNCTION CORRECTLY IN CHROME -->
 			<iframe src="resources/audio/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 			<!-- THIS IS A WORKAROUND TO GET AUTOPLAY TO FUNCTION CORRECTLY IN CHROME -->
-      <div class="container">
+      
+      <div class="container pt-5 pt-md-0">
+      
+        <!-- THIS IS A WORKAROUND TO FIREFOX PROHIBITING AUTOPLAY -- IT IS A SIMPLE TOGGLE BUTTON FOR USERS TO OPT IN TO AUDIO -->
+        <div class="row d-none d-md-flex flex-column justify-content-center align-items-center">
+          <span class="h3 text-secondary js--soundOn d-none"><i class="fas fa-volume-up"></i></span>
+          <span class="h3 text-secondary js--soundOff d-none d-md-block"><i class="fas fa-volume-mute"></i></span>
+          <input class="tgl tgl-light js--soundToggle" id="cb1" type="checkbox"/>
+          <label class="tgl-btn" for="cb1"></label>
+        </div>
+        <!-- THIS IS A WORKAROUND TO FIREFOX PROHIBITING AUTOPLAY -- IT IS A SIMPLE TOGGLE BUTTON FOR USERS TO OPT IN TO AUDIO -->
+
         <div class="row d-none d-md-flex justify-content-between">
           <img
             id="fairy"

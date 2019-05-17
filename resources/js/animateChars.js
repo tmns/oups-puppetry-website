@@ -19,28 +19,62 @@ var AnimateChars = (function () {
     init
   }
 
-  function setOnHover(character, animation) {
-    $(`#${character}`).mouseenter(function () {
-      $(this).addClass(animation);
-      $(`#${character}Sound`)[0].currentTime = 0;
-      $(`#${character}Sound`)[0].play()
-        .catch(function(error) {
-          // do nothing
-        })
-    });
-    $(`#${character}`).mouseleave(function () {
-      $(this).removeClass(animation);
-      $(`#${character}Sound`)[0].pause();
-    })
-  }
-
   function init() {
+    var characters = Object.keys(charactersAndAnimations);
+
+    // handle sound toggle
+    // originally implemented due to firefox prohibiting autoplay
+    // workaround is to add a toggle button so user opts in to audio
+    $('.js--soundToggle').click(function () {
+      if ($('.js--soundOff').hasClass('d-md-block')) {
+        $('.js--soundOn').addClass('d-md-block');
+        $('.js--soundOff').removeClass('d-md-block');
+        for (let character of characters) {
+          setAudioOnHover(character);
+        } 
+      } else {
+        $('.js--soundOn').removeClass('d-md-block');
+        $('.js--soundOff').addClass('d-md-block');
+          for (let character of characters) {
+            $(`#${character}`).off('mouseenter', playAudio);
+            $(`#${character}`).off('mouseleave', pauseAudio);
+          }
+      }          
+    })
     
-    for (let character of Object.keys(charactersAndAnimations)) {
+    // add movement animations to characters
+    for (let character of characters) {
       $(`#${character}`).removeClass(`${character}-slide`);
       $(`#${character}`).addClass('float');
       
-      setOnHover(character, charactersAndAnimations[character]);
+      setAnimateOnHover(character, charactersAndAnimations[character]);
     }
   }
+
+  function setAnimateOnHover(character, animation) {
+    $(`#${character}`).mouseenter(function () {
+      $(this).addClass(animation);
+    });
+    $(`#${character}`).mouseleave(function () {
+      $(this).removeClass(animation);
+    })
+  }
+
+  function setAudioOnHover(character) {
+    $(`#${character}`).mouseenter(playAudio);
+    $(`#${character}`).mouseleave(pauseAudio);    
+  }
+
+  function playAudio () {
+    $(`#${this.id}Sound`)[0].currentTime = 0;
+    $(`#${this.id}Sound`)[0].play()
+      .catch(function (error) {
+        // do nothing
+      });
+  }
+
+  function pauseAudio () {
+    $(`#${this.id}Sound`)[0].pause();
+  }
+
 })();
