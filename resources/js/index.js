@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   // execute common tasks
   SharedJS.init();
-
+  
   // initialize character animations once they have finished 'falling'
   setTimeout(AnimateChars.init, 3500);
 

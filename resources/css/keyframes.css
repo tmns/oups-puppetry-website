@@ -22,6 +22,11 @@
   animation: fadeIn 2s;
 }
 
+.fadeInSlow {
+  -webkit-animation: fadeIn 5s;
+  animation: fadeIn 5s;
+}
+
 .rotateInDownRight {
   -webkit-animation: rotateInDownRight 1s;
   animation: rotateInDownRight 1s;
