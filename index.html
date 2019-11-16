@@ -15,6 +15,10 @@
     <meta name="twitter:description" content="Ελάτε μαζί μας σε μια φανταστική εκδρομή!" />
     <meta name="twitter:image" content="https://oups.netlify.com/resources/img/image-for-links.png" />
     <meta name="twitter:image:alt" content="Oups! The Puppet Theater Logo" />
+
+    <link rel="stylesheet" href="resources/css/index.css" />
+    <link rel="stylesheet" href="resources/css/shared.css" />
+    <link rel="stylesheet" href="resources/css/keyframes.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -33,9 +37,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
     />
-    <link rel="stylesheet" href="resources/css/keyframes.css" />
-    <link rel="stylesheet" href="resources/css/shared.css" />
-    <link rel="stylesheet" href="resources/css/index.css" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="resources/img/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="resources/img/icons/apple-icon-60x60.png">
@@ -60,7 +61,7 @@
   <body class="bg-primary" id="home" data-target="#main-nav">
 
     <!-- NAVIGATION -->
-    <div class="container">
+    <div id="nav-container" class="container">
       <nav id="main-nav" class="navbar navbar-expand-xl navbar-light py-4">
         <div class="container">
           <a href="index.html" class="navbar-brand brand-text text-secondary">
@@ -75,9 +76,9 @@
           </button>
           <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-              <!-- <li class="nav-item">
+              <li class="nav-item">
                 <a href="index.html" class="nav-link active">Αρχική</a>
-              </li> -->
+              </li>
               <li class="nav-item">
                 <a href="about.html" class="nav-link">Για Εμάς</a>
               </li>
@@ -126,8 +127,8 @@
         <div class="row d-none d-md-flex justify-content-between">
           <img
             id="fairy"
-            class="fairy-slide"
-            src="resources/img/header/fairy.png"
+            class="fairy-slide banner-char"
+            src="resources/img/header/char1.png"
             alt="fairy"
           />
           <audio id="fairySound">
@@ -135,8 +136,8 @@
           </audio>
           <img
             id="king"
-            class="king-slide"
-            src="resources/img/header/king.png"
+            class="king-slide banner-char"
+            src="resources/img/header/char2.png"
             alt="king"
           />
           <audio id="kingSound">
@@ -144,8 +145,8 @@
           </audio>
           <img
             id="princess"
-            class="princess-slide"
-            src="resources/img/header/princess.png"
+            class="princess-slide banner-char"
+            src="resources/img/header/char3.png"
             alt="princess"
           />
           <audio id="princessSound">
@@ -153,8 +154,8 @@
           </audio>          
           <img
             id="witch"
-            class="witch-slide"
-            src="resources/img/header/witch.png"
+            class="witch-slide banner-char"
+            src="resources/img/header/char4.png"
             alt="witch"
           />
           <audio id="witchSound">
@@ -164,8 +165,8 @@
         <div class="row d-none d-md-flex justify-content-between">
           <img
             id="apple"
-            class="apple-slide"
-            src="resources/img/header/apple.png"
+            class="apple-slide banner-char"
+            src="resources/img/header/char5.png"
             alt="apple"
           />
           <audio id="appleSound">
@@ -173,8 +174,8 @@
           </audio>            
           <img
             id="gnome"
-            class="gnome-slide"
-            src="resources/img/header/gnome.png"
+            class="gnome-slide banner-char"
+            src="resources/img/header/char6.png"
             alt="gnome"
           />
           <audio id="gnomeSound">
@@ -182,8 +183,8 @@
           </audio>            
           <img
             id="rabbit"
-            class="rabbit-slide"
-            src="resources/img/header/rabbit.png"
+            class="rabbit-slide banner-char"
+            src="resources/img/header/char7.png"
             alt="rabbit"
           />
           <audio id="rabbitSound">
@@ -191,8 +192,8 @@
           </audio>            
           <img
             id="castle"
-            class="castle-slide"
-            src="resources/img/header/castle.png"
+            class="castle-slide banner-char"
+            src="resources/img/header/char8.png"
             alt="castle"
           />
           <audio id="castleSound">
@@ -207,8 +208,29 @@
       </div>
     </section>
 
-    <!-- GALLERY SECTION -->
+    <!-- MOTTO SECTION -->
+    <section id="motto" class="my-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="info-header mb-5 js--mottoHeader">
+              <h1 class="text-secondary pb-3">
+                Το OUPS! τί πάει να πει;
+              </h1>
+              <p class="lead">
+                Η ζωές μας είναι γεμάτες ΟΥΠΣ!<br>
+                Αναπάντεχες καταστασεις που μας κρατάνε πάντα σε εγρήγορση.<br>
+                Με την καρδιά ανοιχτή ψαχνουμε την χαρά σε όσα ΟΥΠΣ!<br>
+                Και αν προκύψουν και τα μεταμορφώνουμε σε γνώση και παιχνίδι.<br>
+                Έσύ πόσα ΟΥΠΣ! έχεις κάνει σήμερα?!<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- GALLERY SECTION -->
     <section id="gallery" class="py-5 bg-secondary text-center">
       <div class="container">
         <div class="row">
@@ -218,10 +240,10 @@
                 Τι Κάνουμε;
               </h1>
               <p class="h3 text-primary">
-                Παραστάσεις, εργαστήρια, σεμινάρια και περιοδείες!
+                Παραστάσεις, εργαστήρια, και σεμινάρια!
               </p>
               <p class="h3 text-primary">
-                Δείτε τις παρακάτω φωτογραφίες για ένα δείγμα των έργων μας 😀
+                Δείτε τις παρακάτω φωτογραφίες για ένα δείγμα των έργων μας
               </p>
             </div>
           </div>
@@ -371,64 +393,6 @@
       </div>
     </section>
 
-    <!-- WHO SECTION -->
-    <section id="who" class="my-5 text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="info-header mb-5 js--whoHeader">
-              <h1 class="text-secondary pb-3">
-                Ποιοι Είμαστε;
-              </h1>
-              <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat, enim culpa vel exercitationem architecto iure!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card js--aggeliki">
-              <div class="card-body">
-                <img
-                  src="resources/img/who-are-we/aggeliki.png"
-                  alt="αγγελική"
-                  class="img-fluid rounded-circle w-50 mb-3"
-                />
-                <h3>Αγγελική</h3>
-                <h4 class="text-muted">Γεια Σας!</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deserunt ratione pariatur harum. Necessitatibus, quaerat
-                  dolorem.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card js--aleksandros">
-              <div class="card-body">
-                <img
-                  src="resources/img/who-are-we/aleksandros.png"
-                  alt="αλέξανδρος"
-                  class="img-fluid rounded-circle w-50 mb-3"
-                />
-                <h3>Αλέξανδρος</h3>
-                <h4 class="text-muted">Τι χαμπάρια;</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deserunt ratione pariatur harum. Necessitatibus, quaerat
-                  dolorem.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- NEWSLETTER SECTION -->
     <section id="newsletter" class="bg-dark text-light py-5">
       <div class="container">
@@ -479,8 +443,7 @@
           <div class="col-lg-9">
             <h1 class="js--contactHeader">Γράψτε μας</h1>
             <p class="lead js--contactHeader">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis, tempore!
+             Προσβλέπουμε το μήνυμά σας!
             </p>
             <form class="js--contactForm" name="home-page-contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
               <!-- netlify hidden input field for spam bots -->
