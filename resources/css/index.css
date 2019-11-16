@@ -1,3 +1,20 @@
+.corner-ribbon {
+  width: 300px;
+  background: #e43;
+  position: fixed;
+  top: 45px;
+  left: -75px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  z-index: 900;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+
 #header h1 {
   -webkit-animation: rotation 8s infinite linear;
   animation: rotation 8s infinite linear; }

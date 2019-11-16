@@ -5,8 +5,9 @@
 html {
   overflow-x: hidden; }
 
-#nav-container {
-  min-width: 1400px; }
+@media (min-width: 1400px) {
+  #nav-container {
+    min-width: 1400px; } }
 
 .navbar {
   background: transparent;
