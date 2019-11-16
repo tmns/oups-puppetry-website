@@ -4,7 +4,7 @@ var AnimateIndexSections = (function () {
     aggeliki: 'animated slideInLeft',
     aleksandros: 'animated slideInRight',
     whatHeader: 'animated flipInX',
-    whoHeader: 'animated flipInX',
+    mottoHeader: 'animated flipInX',
     galleryPhotos: 'animated fadeIn',
     subscribeHeader: 'animated flipInX',
     subscribeForm: 'animated fadeIn',

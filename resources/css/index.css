@@ -6,6 +6,10 @@
       -webkit-animation-delay: 3.2s;
       animation-delay: 3.2s; } }
 
+#header .banner-char {
+  width: 20%;
+  cursor: pointer; }
+
 #header .fairy-slide {
   -webkit-animation: slideInDown 3s;
   animation: slideInDown 3s; }
@@ -145,16 +149,16 @@
 .tgl-light:checked + .tgl-btn {
   background: #4c4b49; }
 
-#who img {
+#motto img {
   margin-top: -50px; }
 
-#who p {
-  font-size: 1.4rem; }
+#motto p {
+  font-size: 1.8rem; }
 
 .js--aggeliki,
 .js--aleksandros,
 .js--whatHeader,
-.js--whoHeader,
+.js--mottoHeader,
 .js--galleryPhotos,
 .js--subscribeHeader,
 .js--subscribeForm,
@@ -168,7 +172,7 @@
 .js--aggeliki.animated,
 .js--aleksandros.animated,
 .js--whatHeader.animated,
-.js--whoHeader.animated,
+.js--mottoHeader.animated,
 .js--galleryPhotos.animated,
 .js--subscribeHeader.animated,
 .js--subscribeForm.animated,
