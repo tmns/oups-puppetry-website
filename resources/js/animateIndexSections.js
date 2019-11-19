@@ -23,7 +23,7 @@ var AnimateIndexSections = (function () {
       $(`.js--${section}`).waypoint(function(direction) {
         $(`.js--${section}`).addClass(sectionsAndAnimations[section]);
       }, {
-        offset: '50%'
+        offset: '80%'
       })
     }
   }
