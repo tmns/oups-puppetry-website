@@ -18,24 +18,24 @@
     #header h1 {
       font-size: 1.7rem; } }
 
-.js--introTxt,
-.js--introImg,
-.js--secondTxt,
+.js--introRightTxt,
+.js--introRightImg,
+.js--introLeftTxt,
 .js--secondImg,
-.js--thirdTxt,
-.js--thirdImg,
-.js--outroTxt,
-.js--outroImg {
+.js--introLeftImg,
+.js--aggelikiCard,
+.js--aleksCard,
+.js--synergatesCard {
   opacity: 0;
   -webkit-animation-duration: 1s;
   animation-duration: 1s; }
 
-.js--introTxt.animated,
-.js--introImg.animated,
-.js--secondTxt.animated,
+.js--introRightTxt.animated,
+.js--introRightImg.animated,
+.js--introLeftTxt.animated,
 .js--secondImg.animated,
-.js--thirdTxt.animated,
-.js--thirdImg.animated,
-.js--outroTxt.animated,
-.js--outroImg.animated {
+.js--introLeftImg.animated,
+.js--aggelikiCard.animated,
+.js--aleksCard.animated,
+.js--synergatesCard.animated {
   opacity: 1; }

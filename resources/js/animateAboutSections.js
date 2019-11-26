@@ -1,14 +1,14 @@
 var AnimateAboutSections = (function () {
   
   var sectionsAndAnimations = {
-    introTxt: 'animated rotateInDownLeft',
-    introImg: 'animated rotateInDownRight',
-    secondTxt: 'animated rotateInDownRight',
-    secondImg: 'animated rotateInDownLeft',
-    thirdTxt: 'animated rotateInDownLeft',
-    thirdImg: 'animated rotateInDownRight',
-    outroTxt: 'animated flipInX',
-    outroImg: 'animated fadeIn'
+    introRightTxt: 'animated rotateInDownRight',
+    introRightImg: 'animated rotateInDownRight',
+    introLeftTxt: 'animated rotateInDownLeft',
+    introLeftImg: 'animated rotateInDownLeft',
+    introEndTxt: 'animated flipInX',
+    aggelikiCard: 'animated rotateInDownLeft',
+    aleksCard: 'animated rotateInDownRight',
+    synergatesCard: 'animated fadeIn'
   }
 
   return {
