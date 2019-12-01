@@ -18,6 +18,10 @@ $(document).ready(function() {
   // initialize our animated sections
   AnimateIndexSections.init();
 
+  // show the sponsors toast
+  $('.toast').toast('show')
+
+
   // // initialize scrollspy
   // $("body").scrollspy({ target: "#main-nav" });
 
