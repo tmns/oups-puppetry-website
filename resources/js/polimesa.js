@@ -8,4 +8,10 @@ $(document).ready(function() {
   .dir(-1)
   .radius(384);
 
+  // initialize lightbox for photo gallery
+  $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+
 });
