@@ -8,4 +8,6 @@ $(document).ready(function() {
   .dir(-1)
   .radius(384);
 
+  $('.tikTakEvent').on('click', () => $('#tikTakModal').modal('show'));
+
 });

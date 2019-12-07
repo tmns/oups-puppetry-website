@@ -116,8 +116,8 @@
         </div>
     </section>
 
-    <!-- tour-dates.js SECTION -->
-    <section id="tour-dates.js" class="py-5 bg-light text-center">
+    <!-- TOUR DATES SECTION -->
+    <section id="tourDates" class="py-5 bg-light text-center">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -134,7 +134,7 @@
             <h1 class="display-4"><span class="badge badge-secondary">15</span></h1>
             <h2>Δεκ</h2>
           </div>
-          <div class="col-10 text-left">
+          <div class="col-10 text-left tikTakEvent">
             <h2><strong>Παράσταση</strong></h2>
             <ul class="list-inline h4">
               <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>Κυριακή</li>
@@ -149,7 +149,7 @@
             <h1 class="display-4"><span class="badge badge-secondary">23</span></h1>
             <h2>Δεκ</h2>
           </div>
-          <div class="col-10 text-left">
+          <div class="col-10 text-left tikTakEvent">
             <h2><strong>Παράσταση</strong></h2>
             <ul class="list-inline h4">
               <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>Δευτέρα</li>
@@ -159,12 +159,12 @@
             <p class="h4">"Τικ τακ μέχρι την πρωτοχρονιά ή πώς να κάνετε φίλο έναν καλικάντζαρο" - Πατήστε για πληοροφίες!</p>
           </div>
         </div>
-        <div class="row row-striped">
+        <div class="row row-striped tikTakEvent">
           <div class="col-2 text-center">
             <h1 class="display-4"><span class="badge badge-secondary">29</span></h1>
             <h2>Δεκ</h2>
           </div>
-          <div class="col-10 text-left">
+          <div class="col-10 text-left tikTakEvent">
             <h2><strong>Παράσταση</strong></h2>
             <ul class="list-inline h4">
               <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>Κυριακή</li>
@@ -174,7 +174,7 @@
             <p class="h4">"Τικ τακ μέχρι την πρωτοχρονιά ή πώς να κάνετε φίλο έναν καλικάντζαρο" - Πατήστε για πληοροφίες!</p>
           </div>
         </div>
-        <div class="row row-striped">
+        <div class="row row-striped tikTakEvent">
           <div class="col-2 text-center">
             <h1 class="display-4"><span class="badge badge-secondary">30</span></h1>
             <h2>Δεκ</h2>
@@ -187,6 +187,70 @@
               <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i>Πολυχώρο Αντάμα</li>
             </ul>
             <p class="h4">"Τικ τακ μέχρι την πρωτοχρονιά ή πώς να κάνετε φίλο έναν καλικάντζαρο" - Πατήστε για πληοροφίες!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Tik Tak Event Modal -->
+      <div class="modal fade" id="tikTakModal" tabindex="-1" role="dialog" aria-labelledby="tikTakLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tikTakLongTitle">Τικ τακ μέχρι την πρωτοχρονιά...</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-secondary">
+              <h2>Για μόνο 4 παραστάσεις!</h2>
+              <h3>"Τικ τακ μέχρι την πρωτοχρονιά ή πώς να κάνετε φίλο έναν καλικάντζαρο"<br>Στον Πολυχώρο Αντάμα<br></h3>
+              <div class="w-100">
+                <img class="w-50 mx-auto" src="resources/img/tour-dates/tik-tak-adama.jpg" />
+              </div>
+              <h3>
+                <strong>
+                  Απαραίτητη η κράτηση θέσεων στο τηλ. 6932337032<br>
+                  (στείλτε μήνυμα: Ονοματεπώνυμο, αριθμό ατόμων και ημερομηνία κράτησης)
+                </strong>
+              </h3>
+              <hr>
+              <p class="h4 text-left">
+                Σε ένα δεντροπαραμυθένιο σκηνικό επιτραπέζιες κούκλες άμεσου χειρισμού, τεχνικές θεάτρου σκιών καθώς και πρωτότυπη μουσική ζωντανεύουν ένα σύγχρονο πρωτοχρονιάτικο παραμύθι.<br>
+                Ένα παραμύθι που οι ρίζες του βρίσκονται στις λαϊκές παραδόσεις των καλικαντζάρων και ταυτόχρονα περιπλανιέται σε ερωτήματα που μόνο η φίλια και η αλληλεγγύη μπορούν να απαντήσουν.<br>
+                τικ τακ τικ τακ...<br>
+                Τα λεπτά κυλούν και η ώρα πλησιάζει για την πρωτοχρονιά.<br>
+                Όλοι περιμένουν με χαρά και ανυπομονησία.<br>
+                Όμως ξαφνικά όλα τα ρολόγια σταματούν και ο χρόνος παγώνει.<br>
+                Τι συνέβη?<br>
+                Δεν θα έρθει φέτος ο καινούργιος χρόνος?<br>
+                Τι θα γίνει με την φετινή πρωτοχρονιά?<br>
+                Την λύση θα δώσουν ένας μικρός καλικάντζαρος και ένα κορίτσι.<br>
+                Μια ιστορία για μικρά, μεγάλα, καλά και άτακτα παιδιά.<br>
+                Μια καλικαντζαρίσια χοροπηδιχτή ιστορία.<br>
+                Μια ιστορία για να ανακαλύψουμε αν τελικά
+                άνθρωποι και καλικάντζαροι διαφέρουν.<br>
+                Μια ιστορία για όλα όσα είναι πιο σημαντικά
+                από τα δώρα τις κορδέλες και τα λαμπιόνια
+                Μια ιστορία για την φιλία το νοιάξιμο και την διαφορετικότητα.<br><br>
+                
+                για παιδιά από 3-103 χρονών<br>
+                διάρκεια παράστασης: 60'<br>
+                παραμύθι-εμψύχωση-κούκλες-σκηνικά:  ΟΥΠΣ! το κουκλοθέατρο<br>
+                Μουσική: Ευριπίδης Ζαφείρας, Βαγγέλης Αλεξόπουλος<br>
+                Teaser: Δανάη Μανουσαρίδη<br>
+                teaser παράστασης:<br><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNo3YTZ2ah0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                
+                Kυριακή 15 Δεκέμβρη στις 18:00<br>
+                Δευτέρα 23 Δεκέμβρη στις 18:00<br>
+                Κυριακή 29 Δεκέμβρη στις 18:00<br>
+                Δευτέρα 30 Δεκέμβρη στις 12:00<br><br>
+                
+                Γενική είσοδος 8 ευρώ.
+              </p>                           
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Κλείστε</button>
+            </div>
           </div>
         </div>
       </div>
