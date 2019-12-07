@@ -17,3 +17,14 @@
   @media (min-width: 994px) {
     #header h1 {
       font-size: 1.7rem; } }
+
+.row-striped {
+  background: white;
+  border: black;
+  border-style: dashed;
+  padding: 15px 5px 15px 5px;
+  margin-bottom: 20px;
+  cursor: pointer; }
+
+.row-striped:hover {
+  background: #efefef; }

@@ -1,0 +1,1 @@
+#header{position:relative;min-height:300px}#header img{height:100%;width:30%;-webkit-animation:flipInX 1s;animation:flipInX 1s}#header h1{font-size:1.5rem;padding-top:4rem;-webkit-animation:flipInX 1s;animation:flipInX 1s}@media (min-width:765px){#header h1{padding-top:0}}@media (min-width:994px){#header h1{font-size:1.7rem}}
