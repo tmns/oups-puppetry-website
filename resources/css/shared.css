@@ -3,7 +3,14 @@
   src: url(/resources/fonts/PFAMATE9.OTF); }
 
 html {
+  height: 100vh;
   overflow-x: hidden; }
+
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
+}
 
 @media (min-width: 1400px) {
   #nav-container {
@@ -46,6 +53,8 @@ html {
   margin-bottom: 0.7rem; }
 
 footer {
+  grid-row-start: 10;
+  grid-row-end: 11;
   font-family: PFAmateur;
   font-size: 1.2rem; }
   @media (min-width: 768px) {
