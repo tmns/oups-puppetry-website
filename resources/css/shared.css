@@ -14,19 +14,23 @@ body {
 
 @media (min-width: 1400px) {
   #nav-container {
-    min-width: 1700px; } }
+    min-width: 1700px; } 
+  
+  .navbar-logo {
+    left: 115px !important;
+    width: 8% !important; 
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg) } }
 
 .navbar {
   background: transparent;
   z-index: 100; }
   .navbar .navbar-logo {
-    width: 8%;
     position: absolute;
+    width: 18%;
     top: 20px;
-    left: 115px;
-    -webkit-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
-    transform: rotate(-15deg); }
+    left: 270px; }
   .navbar .nav-item {
     font-size: 1.3rem;
     padding-right: 1.4rem; }
