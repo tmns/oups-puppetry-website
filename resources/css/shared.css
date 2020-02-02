@@ -14,7 +14,7 @@ body {
 
 @media (min-width: 1400px) {
   #nav-container {
-    min-width: 1400px; } }
+    min-width: 1700px; } }
 
 .navbar {
   background: transparent;
@@ -39,6 +39,8 @@ body {
   .navbar .logo {
     width: 4.5rem;
     height: 4.5rem; }
+  .nav-links-container {
+    max-width: 1210px !important; }
 
 #header {
   position: relative;
