@@ -3,6 +3,9 @@ $(document).ready(function() {
   // reverse circle the header text
   new CircleType(document.getElementById("header-text"));
 
+  // make the circle header text visible
+  $('#header-text').css('opacity', '100');
+
   // execute common tasks
   SharedJS.init();
   
@@ -17,10 +20,6 @@ $(document).ready(function() {
 
   // initialize our animated sections
   AnimateIndexSections.init();
-
-  // show the sponsors toast
-  $('.toast').toast('show')
-
 
   // // initialize scrollspy
   // $("body").scrollspy({ target: "#main-nav" });
