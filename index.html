@@ -17,11 +17,11 @@
     <meta name="twitter:image:alt" content="Oups! The Puppet Theater Logo" />
 
     <link 
-      dns-prefetch 
-      rel="stylesheet" 
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-      crossorigin="anonymous"
+    dns-prefetch 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous"
     >
     <link rel="stylesheet" href="resources/css/shared.css" />
     <link rel="stylesheet" href="resources/css/index.css" />
@@ -91,7 +91,7 @@
     <title>Oups! The Puppet Theater: ΟΥΠΣ! Το Kουκλοθεάτρο</title>
   </head>
 
-  <body class="bg-primary" id="home" data-target="#main-nav">
+  <body class="bg-primary-c" id="home" data-target="#main-nav">
     <!-- Corner Ribbon -->
     <!-- <div class="corner-ribbon sticky red shadow">Under Construction!</div> -->
 
@@ -146,7 +146,7 @@
     </div>
 
     <!-- HEADER SECTION -->
-    <section id="header" class="pb-5 bg-primary">
+    <section id="header" class="pb-5 bg-primary-c">
       
       <!-- THIS IS A WORKAROUND TO GET AUTOPLAY TO FUNCTION CORRECTLY IN CHROME -->
 			<iframe src="resources/audio/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
@@ -156,8 +156,8 @@
       
         <!-- THIS IS A WORKAROUND TO FIREFOX PROHIBITING AUTOPLAY -- IT IS A SIMPLE TOGGLE BUTTON FOR USERS TO OPT IN TO AUDIO -->
         <div id="audio-switch" class="row d-none d-md-flex flex-column justify-content-center align-items-center" style="opacity: 0">
-          <span class="h3 text-secondary js--soundOn d-none"><i class="fas fa-volume-up"></i></span>
-          <span class="h3 text-secondary js--soundOff d-none d-md-block"><i class="fas fa-volume-mute"></i></span>
+          <span class="h3 text-secondary-c js--soundOn d-none"><i class="fas fa-volume-up"></i></span>
+          <span class="h3 text-secondary-c js--soundOff d-none d-md-block"><i class="fas fa-volume-mute"></i></span>
           <input class="tgl tgl-light js--soundToggle" id="cb1" type="checkbox"/>
           <label class="tgl-btn" for="cb1"></label>
         </div>
@@ -272,7 +272,7 @@
           </div>
         </div>
         <div class="row d-flex justify-content-center">
-          <h1 id="header-text" class="text-center text-secondary" style="opacity: 0">
+          <h1 id="header-text" class="text-center text-secondary-c" style="opacity: 0">
             Oups! The Puppet Theater   
           </h1>
         </div>
@@ -287,7 +287,7 @@
         <div class="row">
           <div class="col">
             <div class="info-header mb-5 js--mottoHeader">
-              <h1 class="text-secondary pb-3">
+              <h1 class="text-secondary-c pb-3">
                 Το OUPS! τί πάει να πει;
               </h1>
               <p class="lead">
@@ -304,18 +304,18 @@
     </section>
 
     <!-- GALLERY SECTION -->
-    <section id="gallery" class="py-5 bg-secondary text-center">
+    <section id="gallery" class="py-5 bg-secondary-c text-center">
       <div class="container">
         <div class="row">
           <div class="col">
             <div class="info-header mb-5 js--whatHeader">
-              <h1 class="text-primary pb-3">
+              <h1 class="text-primary-c pb-3">
                 Τι Κάνουμε;
               </h1>
-              <p class="h3 text-primary">
+              <p class="h3 text-primary-c">
                 Παραστάσεις, εργαστήρια, και σεμινάρια!
               </p>
-              <p class="h3 text-primary">
+              <p class="h3 text-primary-c">
                 Πάρτε μια ιδέα από την δουλειά μας
               </p>
             </div>
@@ -513,12 +513,12 @@
     </section>
 
     <!-- NEWSLETTER SECTION -->
-    <section id="newsletter" class="bg-dark text-light py-5">
+    <section id="newsletter" class="bg-dark-c text-light py-5">
       <div class="container">
         <div class="row js--subscribeHeader">
           <div class="col">
             <div class="info-header mb-5">
-              <h1 class="text-primary text-center">
+              <h1 class="text-primary-c text-center">
                 Εγγραφείτε στο newsletter μας
               </h1>
             </div>
@@ -533,7 +533,7 @@
               <input
                 name="name"
                 type="text"
-                class="form-control form-control-lg mb-resp bg-light"
+                class="form-control form-control-lg mb-resp bg-light-c"
                 placeholder="Όνομα"
                 required
               />
@@ -542,13 +542,13 @@
               <input
                 name="email"
                 type="text"
-                class="form-control form-control-lg mb-resp bg-light"
+                class="form-control form-control-lg mb-resp bg-light-c"
                 placeholder="Email"
                 required
               />
             </div>
             <div class="col-md-4">
-              <button type="submit" class="btn btn-primary btn-lg btn-block">
+              <button type="submit" class="btn btn-primary-c btn-lg btn-block">
                   <i class="far fa-envelope-open"></i> Εγγραφή
               </button>
             </div>
@@ -558,7 +558,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="bg-light py-5">
+    <section id="contact" class="bg-light-c py-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-9">
@@ -603,7 +603,7 @@
               </div>
               <button
                 type="submit"
-                class="btn btn-dark btn-block btn-lg"
+                class="btn btn-dark-c btn-block btn-lg"
               > <i class="far fa-paper-plane"></i> Αποστολή
               </button>
             </form>
@@ -619,7 +619,7 @@
     </section>
 
     <!-- FOOTER SECTION -->
-    <footer id="main-footer" class="py-5 bg-secondary text-primary">
+    <footer id="main-footer" class="py-5 bg-secondary-c text-primary-c">
       <div class="container py-2">
         <div class="row text-center">
           <div class="col">
@@ -629,19 +629,19 @@
                 <a
                   href="https://www.facebook.com/OUPS-the-puppet-theater-107602269582337/"
                 >
-                  <i class="fab fa-facebook text-primary"></i>
+                  <i class="fab fa-facebook text-primary-c"></i>
                 </a>
               </div>
               <div class="px-4">
                 <a
                   href="https://www.youtube.com/channel/UCjEbuJG6-YDl3lMvXcQ3-JA"
                 >
-                  <i class="fab fa-youtube text-primary"></i>
+                  <i class="fab fa-youtube text-primary-c"></i>
                 </a>
               </div>
               <div class="px-4">
                 <a href="https://www.instagram.com/oups_the_puppet_theater/">
-                  <i class="fab fa-instagram text-primary"></i>
+                  <i class="fab fa-instagram text-primary-c"></i>
                 </a>
               </div>
             </div>
