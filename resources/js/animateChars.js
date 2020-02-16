@@ -1,6 +1,5 @@
 // Animates the main heading characters
 // Sound effects obtained from https://www.zapsplat.com
-// Character images obtained from https://www.vecteezy.com/vector-art/122577-fairytale-shadow-puppets
 
 var AnimateChars = (function () {
 
@@ -49,6 +48,10 @@ var AnimateChars = (function () {
       
       setAnimateOnHover(character, charactersAndAnimations[character]);
     }
+
+    // make audio switch visible
+    $('#audio-switch').addClass('fadeIn');
+    $('#audio-switch').css('opacity', '');
   }
 
   function setAnimateOnHover(character, animation) {
