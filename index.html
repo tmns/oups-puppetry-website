@@ -16,25 +16,27 @@
     <meta name="twitter:image" content="https://oupspuppetry.gr/resources/img/image-for-links.png" />
     <meta name="twitter:image:alt" content="Oups! The Puppet Theater Logo" />
 
-    <link rel="stylesheet" href="resources/css/index.css" />
+    <link 
+      dns-prefetch 
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+      crossorigin="anonymous"
+    >
     <link rel="stylesheet" href="resources/css/shared.css" />
+    <link rel="stylesheet" href="resources/css/index.css" />
     <link rel="stylesheet" href="resources/css/keyframes.css" />
+    <link
+      dns-prefetch
+      href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500"
+      rel="stylesheet"
+    />
     <link
       dns-prefetch
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
-    />
-    <link
-      dns-prefetch
-      href="https://fonts.googleapis.com/css?family=Black+And+White+Picture"
-      rel="stylesheet"
-    />
-    <link
-      dns-prefetch
-      href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500"
-      rel="stylesheet"
     />
     <link
       dns-prefetch
@@ -153,7 +155,7 @@
       <div class="container pt-5 pt-md-0">
       
         <!-- THIS IS A WORKAROUND TO FIREFOX PROHIBITING AUTOPLAY -- IT IS A SIMPLE TOGGLE BUTTON FOR USERS TO OPT IN TO AUDIO -->
-        <div class="row d-none d-md-flex flex-column justify-content-center align-items-center fadeInSlow">
+        <div id="audio-switch" class="row d-none d-md-flex flex-column justify-content-center align-items-center" style="opacity: 0">
           <span class="h3 text-secondary js--soundOn d-none"><i class="fas fa-volume-up"></i></span>
           <span class="h3 text-secondary js--soundOff d-none d-md-block"><i class="fas fa-volume-mute"></i></span>
           <input class="tgl tgl-light js--soundToggle" id="cb1" type="checkbox"/>
@@ -270,7 +272,7 @@
           </div>
         </div>
         <div class="row d-flex justify-content-center">
-          <h1 id="header-text" class="text-center text-secondary">
+          <h1 id="header-text" class="text-center text-secondary" style="opacity: 0">
             Oups! The Puppet Theater   
           </h1>
         </div>
@@ -627,19 +629,19 @@
                 <a
                   href="https://www.facebook.com/OUPS-the-puppet-theater-107602269582337/"
                 >
-                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-facebook text-primary"></i>
                 </a>
               </div>
               <div class="px-4">
                 <a
                   href="https://www.youtube.com/channel/UCjEbuJG6-YDl3lMvXcQ3-JA"
                 >
-                  <i class="fab fa-youtube"></i>
+                  <i class="fab fa-youtube text-primary"></i>
                 </a>
               </div>
               <div class="px-4">
                 <a href="https://www.instagram.com/oups_the_puppet_theater/">
-                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-instagram text-primary"></i>
                 </a>
               </div>
             </div>
